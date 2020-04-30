@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Преподам</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/normalize-min.css">
+    <link rel="stylesheet" href="css/style-min.css">
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="page-header page-header--nojs">
+      <div class="page-header__container">
+        <a class="page-header__sity-link" href="">Москва</a>
+        <a class="page-header__phone-link" href="tel:+78005623452">+7 800-562-3452</a>
+        <a class="page-header__logo logo" href="">
+          <picture>
+            <source type="image/webp" srcset="img/logo.webp">
+
+            <img class="logo__image" src="img/logo.png" width="88" height="88" alt="Логотип «Преподам»">
+          </picture>
+        </a>
+        <button class="page-header__menu-toggle menu-toggle">
+        <span class="menu-toggle__text">Открыть меню</span>
+        </button>
+        <div class="page-header__nav-container page-header__nav-container--nojs">
+          <nav class="page-header__main-nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--active" href="">О проекте</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="">Онлайн-курсы</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="">Статьи</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="page-header__user-nav user-nav">
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="">Регистрация</a>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="">Вход</a>
+            </li>
+          </ul>
+          <a class="page-header__teacher-link" href="">Преподавателям</a>
+        </div>
+      </div>
+      <h1 class="page-header__title"><span>Первая</span> образовательная<br> онлайн-платформа,<br> созданная преподами!
+      </h1>
+      <h2 class="page-header__text">Описание уникального торгового предложения или же описание названия того или иного
+        продукта, который на первом экран</h2>
+      <button class="page-header__button button">Зарегистрироваться</button>
+      <p class="page-header__bottom-text">подробнее ниже</p>
+    </header>
+    <main class="page-main">
+      <p class="page-main__text">199 преподавателей уже работает на сайте</p>
+      <h2 class="page-main__title">Выберите свою программу</h2>
+      <section class="page-main__gallery gallery">
+        <div class="center" data-slick='{"slidesToShow": 1, "slidesToScroll": 3}'>
+          <div>
+            <a class="gallery__link" href="">
+              <div class="gallery__image-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/photo-boy-desktop.webp">
+                  <source type="image/webp" media="(min-width: 1024px)" srcset="img/photo-boy-tablet.webp">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="img/photo-boy-mobile.webp">
+
+                  <source media="(min-width: 1440px)" srcset="img/photo-boy-desktop.png">
+                  <source media="(min-width: 1024px)" srcset="img/photo-boy-tablet.png">
+                  <img class="gallery__image gallery__image--side" src="img/photo-boy-mobile.png" width="261" height="450"
+                    alt="школьная программа">
+                </picture>
+                <p class="gallery__text">Школьная<br> программа </p>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a class="gallery__link" href="">
+              <div class="gallery__image-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/photo-woman-desktop.webp">
+                  <source type="image/webp" media="(min-width: 1024px)" srcset="img/photo-woman-tablet.webp">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="img/photo-woman-tablet.webp">
+
+                  <source media="(min-width: 1440px)" srcset="img/photo-woman-desktop.png">
+                  <source media="(min-width: 1024px)" srcset="img/photo-woman-tablet.png">
+                  <img class="gallery__image gallery__image--side" src="img/photo-woman-tablet.png" width="261"
+                    height="450" alt="школьная программа">
+                </picture>
+                <p class="gallery__text">Студенческая<br> программа </p>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a class="gallery__link" href="">
+              <div class="gallery__image-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/photo-man-desktop.webp">
+                  <source type="image/webp" media="(min-width: 1024px)" srcset="img/photo-man-tablet.webp">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="img/photo-man-tablet.webp">
+
+                  <source media="(min-width: 1440px)" srcset="img/photo-man-desktop.png">
+                  <source media="(min-width: 1024px)" srcset="img/photo-man-tablet.png">
+                  <img class="gallery__image gallery__image--side" src="img/photo-man-tablet.png" width="261" height="450"
+                    alt="школьная программа">
+                </picture>
+                <p class="gallery__text">Дополнительное<br> образование </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/menu-toggle-min.js"></script>
+    <script src="js/jquery-3.5.0-min.js"></script>
+    <script src="js/slick-min.js"></script>
+    <script src="js/common-min.js"></script>
+  </body>
+</html>
