@@ -24,7 +24,7 @@
 
   var onPopupButtonClose = function (event) {
     if (event.target.classList.contains('popup__button-close')) {
-      onPopupClose()
+      onPopupClose();
     };
   };
 
