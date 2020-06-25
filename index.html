@@ -1,122 +1,179 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>Преподам</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/normalize-min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pincet - студия депиляции</title>
     <link rel="stylesheet" href="css/style-min.css">
+    <link rel="preload" href="fonts/MUSEOSANSCYRL300.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/MUSEOSANSCYRL500.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="icon" type="image/png" sizes="64x64" href="favicons/favicon-64x64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
   </head>
   <body>
-    <header class="page-header page-header--nojs">
-      <div class="page-header__container">
-        <a class="page-header__sity-link" href="">Москва</a>
-        <a class="page-header__phone-link" href="tel:+78005623452">+7 800-562-3452</a>
-        <a class="page-header__logo logo" href="">
-          <picture>
-            <source type="image/webp" srcset="img/logo.webp">
+    <div class="main">
 
-            <img class="logo__image" src="img/logo.png" width="88" height="88" alt="Логотип «Преподам»">
-          </picture>
-        </a>
-        <button class="page-header__menu-toggle menu-toggle">
-        <span class="menu-toggle__text">Открыть меню</span>
-        </button>
-        <div class="page-header__nav-container page-header__nav-container--nojs">
-          <nav class="page-header__main-nav main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--active" href="">О проекте</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="">Онлайн-курсы</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="">Статьи</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="page-header__user-nav user-nav">
-            <li class="user-nav__item">
-              <a class="user-nav__link" href="">Регистрация</a>
+      <header class="main__page-header page-header">
+        <div class="page-header__top-wrapper">
+          <div class="page-header__logo logo">
+            <a href="#" class="logo__link">
+              <img class="logo__image" src="img/logo.svg" width="280" height="126" alt="логотип Pincet - студия депиляции">
+            </a>
+            <p class="logo__text">
+              Студия депиляции и<br>
+              массажный кабинет<br>
+              в Бресте</p>
+          </div>
+          <ul class="page-hader__contacts contacts">
+            <li class="contacts__adress">
+              <p class="contacts__adress-text">Мы находимся в центре:</p>
+              <p class="contacts__adress-text contacts__adress-text--map">г. Брест, ул. Гоголя, д.65</p>
+              <div class="contacts__adress-button-wrapper">
+                <button class="contacts__adress-button">Смотреть на карте
+                </button>
+                <div class="contacts__adress-map">
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5cf24bc922160ee247329dae8109d5b4d03eb3d3bfef648917c74169f6a6d5fa&amp;source=constructor" width="500" height="400"></iframe>
+                </div>
+              </div>
             </li>
-            <li class="user-nav__item">
-              <a class="user-nav__link" href="">Вход</a>
+            <li class="contacts__about">
+              <div class="contacts__about-container">
+                <div class="contacts__about-icon-wrapper">
+                  <img class="contacts__icon" src="img/icon-phone.png" width="15" height="15" alt="Телефон">
+                </div>
+                <p class="contacts__about-text contacts__about-text--phone">Звоните, мы сейчас работаем</p>
+                <a class="contacts__about-phone" href="tel:+375333822499">+375 33 382 24 99</a>
+              </div>
+              <div class="contacts__about-container">
+                <div class="contacts__about-icon-wrapper contacts__about-icon-wrapper--time">
+                  <img class="contacts__icon" src="img/icon-time.png" width="15" height="15" alt="Рабочее время">
+                </div>
+                <p class="contacts__about-text contacts__about-text--time">Пн-Вс <span>9:00-21:00</span></p>
+              </div>
+            </li>
+            <li class="contacts__callback">
+              <button class="contacts__callback-button">Записаться<br> онлайн</button>
             </li>
           </ul>
-          <a class="page-header__teacher-link" href="">Преподавателям</a>
         </div>
+        <nav class="page-header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item nav__item--active">
+              <a class="nav__link nav__link--active">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Шугаринг и депиляция воском</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Антицеллюлитный массаж</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Классический массаж</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Обучение</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Косметика для мастеров</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Статьи</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">О студии</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+          <button class="nav__toggle"></button>
+        </nav>
+
+      </header>
+
+      <main class="main__page-main page-main">
+        <section class="page-main__capture-block capture-block">
+          <h1 class="capture-block__title">
+            Хотите избавиться от<br>
+            <span>нежелательных волос</span><br>
+            или нужен сеанс<br>
+            <span>антицеллюлитного массажа?</span>
+          </h1>
+          <div class="capture-block__container">
+            <div class="capture-block__advantages-wrapper">
+              <ul class="capture-block__advantages">
+                <li class="capture-block__advantage">депиляция воском и Шугаринг;</li>
+                <li class="capture-block__advantage">профессиональные сертифицированные мастера;</li>
+                <li class="capture-block__advantage">работаем и с женщинами, и с мужчинами;</li>
+                <li class="capture-block__advantage">результат уже после первой процедуры.</li>
+              </ul>
+              <div class="capture-block__button-wrapper">
+                <button class="capture-block__button button">Получить карту <br>клиента бесплатно</button>
+              </div>
+            </div>
+            <div class="capture-block__card">
+              <div class="capture-block__card-button-container">
+                <button class="capture-block__card-button">i</button>
+                <div class="capture-block__card-board">
+                  <p class="capture-block__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore   et dolore magna</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="capture-block__wave">
+            <img class="capture-block__wave-arrow" src="img/arrow-in-circle.png" width="131" height="131" alt="Стрелка вниз">
+          </div>
+        </section>
+      </main>
+
+      <footer class="main__page-footer page-footer"></footer>
+
+      <div class="main__cloud-animation cloud-animation">
+        <img data-speed="50" class="cloud-animation__image cloud-animation__image--1" src="img/icon-cloud-1.png" width="367" height="340" alt="Cloud-image">
+
+        <img data-speed="10" class="cloud-animation__image cloud-animation__image--2" width="287" height="266" src="img/icon-cloud-2.png" alt="Cloud-image">
       </div>
-      <h1 class="page-header__title"><span>Первая</span> образовательная<br> онлайн-платформа,<br> созданная преподами!
-      </h1>
-      <h2 class="page-header__text">Описание уникального торгового предложения или же описание названия того или иного
-        продукта, который на первом экран</h2>
-      <button class="page-header__button button">Зарегистрироваться</button>
-      <p class="page-header__bottom-text">подробнее ниже</p>
-    </header>
-    <main class="page-main">
-      <p class="page-main__text">199 преподавателей уже работает на сайте</p>
-      <h2 class="page-main__title">Выберите свою программу</h2>
-      <section class="page-main__gallery gallery">
-        <div class="center" data-slick='{"slidesToShow": 1, "slidesToScroll": 3}'>
-          <div>
-            <a class="gallery__link" href="">
-              <div class="gallery__image-container">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/photo-boy-desktop.webp">
-                  <source type="image/webp" media="(min-width: 1024px)" srcset="img/photo-boy-tablet.webp">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="img/photo-boy-mobile.webp">
 
-                  <source media="(min-width: 1440px)" srcset="img/photo-boy-desktop.png">
-                  <source media="(min-width: 1024px)" srcset="img/photo-boy-tablet.png">
-                  <img class="gallery__image gallery__image--side" src="img/photo-boy-mobile.png" width="261" height="450"
-                    alt="школьная программа">
-                </picture>
-                <p class="gallery__text">Школьная<br> программа </p>
-              </div>
-            </a>
-          </div>
-          <div>
-            <a class="gallery__link" href="">
-              <div class="gallery__image-container">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/photo-woman-desktop.webp">
-                  <source type="image/webp" media="(min-width: 1024px)" srcset="img/photo-woman-tablet.webp">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="img/photo-woman-tablet.webp">
+    </div>
 
-                  <source media="(min-width: 1440px)" srcset="img/photo-woman-desktop.png">
-                  <source media="(min-width: 1024px)" srcset="img/photo-woman-tablet.png">
-                  <img class="gallery__image gallery__image--side" src="img/photo-woman-tablet.png" width="261"
-                    height="450" alt="школьная программа">
-                </picture>
-                <p class="gallery__text">Студенческая<br> программа </p>
-              </div>
-            </a>
+    <div class="popup popup--closed">
+      <div class="popup__form-window">
+        <form class="popup__form" action="#" method="POST">
+          <h2 class="popup__title"><span>Получите</span> программу обучения</h2>
+          <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna   aliqua. Ut enim<br> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+          <ul class="popup__list">
+            <li class="popup__item">
+              <select class="popup__form-item popup__form-item--dropdown" name="qualification">
+                <option selected="" value="s1">Повыешение квалификации</option>
+              </select>
+            </li>
+            <li class="popup__item">
+              <input class="popup__form-item popup__form-item--name" type="text" name="name" placeholder="Ваше имя" required="">
+            </li>
+            <li class="popup__item">
+              <input class="popup__form-item popup__form-item--name" type="tel" name="phone" placeholder="Ваш номер телефона" required="">
+            </li>
+          </ul>
+          <div class="popup__button-wrapper">
+            <button class="popup__button button button--form" type="submit">Получить программу</button>
           </div>
-          <div>
-            <a class="gallery__link" href="">
-              <div class="gallery__image-container">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/photo-man-desktop.webp">
-                  <source type="image/webp" media="(min-width: 1024px)" srcset="img/photo-man-tablet.webp">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="img/photo-man-tablet.webp">
+          <button class="popup__button-close" type="button"></button>
+        </form>
+      </div>
+      <div class="popup__success-window popup__success-window--closed">
+        <h2 class="popup__success-title">Ваш заказ принят.</h2>
+        <p class="popup__success-text">Ожидайте звонка</p>
+        <button class="popup__button-close popup__button-close--success" type="button"></button>
+      </div>
+    </div>
 
-                  <source media="(min-width: 1440px)" srcset="img/photo-man-desktop.png">
-                  <source media="(min-width: 1024px)" srcset="img/photo-man-tablet.png">
-                  <img class="gallery__image gallery__image--side" src="img/photo-man-tablet.png" width="261" height="450"
-                    alt="школьная программа">
-                </picture>
-                <p class="gallery__text">Дополнительное<br> образование </p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-    <script src="js/menu-toggle-min.js"></script>
-    <script src="js/jquery-3.5.0-min.js"></script>
-    <script src="js/slick-min.js"></script>
-    <script src="js/common-min.js"></script>
+    <div style="display: none;">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="a" d="M0 0h1921v154.17H0z"></path></defs><symbol id="icon-wave" viewBox="0 0 1921 154.17"><clipPath id="b"><use xlink:href="#a" overflow="visible"></use></clipPath><path d="M1921 154.17v-134s-299 78-520 39-376-39-382-39-23 1-29-3C984.23 13.32 972.92-.68 960.5.02c-12.42-.7-23.73 13.3-29.5 17.15-6 4-23 3-29 3s-161 0-382 39-520-39-520-39v134h1921z" clip-path="url(#b)" fill="#fff"></path></symbol></svg>
+    </div>
+
+    <script src="js/animation.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
