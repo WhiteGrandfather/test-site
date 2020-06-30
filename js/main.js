@@ -3,7 +3,6 @@
 (function () {
   var ESC_KEY = 'Escape';
 
-  var buttonWrapperElement = document.querySelector('.capture-block__button-wrapper');
   var popupElement = document.querySelector('.popup');
   var formWindowElement = popupElement.querySelector('.popup__form-window');
   var SuccessWindowElement = popupElement.querySelector('.popup__success-window');
@@ -50,12 +49,11 @@
 
     if (!popupElement.classList.contains('popup__form-window--closed')) {
       formWindowElement.classList.remove('popup__form-window--closed');
-      SuccessWindowElement.classList.add('popup__success-window');
+      SuccessWindowElement.classList.add('popup__success-window--closed');
     };
 
     document.addEventListener('click', onPopupOpen);
     document.addEventListener('mousemove', window.animation);
-    popupCloseButtonElement.removeEventListener('click', onPopupClose);
     document.removeEventListener('keydown', onEscPopupClose);
     popupElement.removeEventListener('click', onPopupAreaClick);
     popupElement.removeEventListener('submit', onFormSend);
