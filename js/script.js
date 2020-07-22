@@ -5,6 +5,8 @@ try {
   var navToggle = document.querySelector('.toggle__button');
   var navLinksList = navHeader.querySelectorAll('.nav__link');
 
+  navHeader.classList.remove('nav--no-js');
+
   var onLinkClick = function () {
     if (navHeader.classList.contains('nav--active')) {
       navHeader.classList.remove('nav--active');
@@ -23,8 +25,6 @@ try {
       }
     });
   };
-
-  navHeader.classList.remove('nav--no-js');
 
   navToggle.addEventListener('click', function () {
     if (!navHeader.classList.contains('nav--active')) {
