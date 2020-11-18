@@ -3,7 +3,7 @@
 (function () {
 
   // JSON адрес
-  var URL = '';
+  var URL = 'https://github.com/WhiteGrandfather/test-petrovich/blob/master/';
   // JSON файл
   var JSON_CONTAINER = 'products.json';
 
@@ -12,11 +12,6 @@
   var XHR_TIMEOUT = 10000;
   var METHOD_GET = 'GET';
   var METHOD_POST = 'post';
-
-  request.setRequestHeader("Referer", 'https://whitegrandfather.github.io/test-site/');
-  // response.setHeader(
-  //   'Access-Control-Allow-Origin', 'https://whitegrandfather.github.io/test-site/'
-  // );
 
   var renderError = function (errorMessage) {
     var node = document.createElement('div');
