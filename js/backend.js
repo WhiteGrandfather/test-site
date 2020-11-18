@@ -13,9 +13,10 @@
   var METHOD_GET = 'GET';
   var METHOD_POST = 'post';
 
-  response.setHeader(
-    'Access-Control-Allow-Origin', 'https://whitegrandfather.github.io/test-site/'
-  );
+  request.setRequestHeader("Referer", 'https://whitegrandfather.github.io/test-site/');
+  // response.setHeader(
+  //   'Access-Control-Allow-Origin', 'https://whitegrandfather.github.io/test-site/'
+  // );
 
   var renderError = function (errorMessage) {
     var node = document.createElement('div');
